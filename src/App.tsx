@@ -79,7 +79,6 @@ function App() {
     <div className="app-main">
       <header className="app-header glass-panel animate-fade-in">
         <div className="title-section">
-          <Sparkles className="header-icon pulse-icon" size={28} />
           <h1>背景透過サービス</h1>
         </div>
         
