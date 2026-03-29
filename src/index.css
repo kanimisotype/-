@@ -43,7 +43,7 @@ body {
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--glass-border);
   box-shadow: var(--glass-shadow);
-  border-radius: 1.5rem;
+  border-radius: 5px;
 }
 
 .btn-primary {
@@ -51,7 +51,7 @@ body {
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
-  border-radius: 0.75rem;
+  border-radius: 5px;
   font-weight: 600;
   font-size: 1rem;
   cursor: pointer;
@@ -78,7 +78,7 @@ body {
   color: var(--text-main);
   border: 1px solid var(--glass-border);
   padding: 0.75rem 1.5rem;
-  border-radius: 0.75rem;
+  border-radius: 5px;
   font-weight: 600;
   font-size: 1rem;
   cursor: pointer;
@@ -119,7 +119,7 @@ body {
 }
 ::-webkit-scrollbar-thumb {
   background: rgba(148, 163, 184, 0.3);
-  border-radius: 4px;
+  border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(148, 163, 184, 0.5);
