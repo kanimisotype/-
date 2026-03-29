@@ -1,0 +1,90 @@
+.dropzone-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  background: white;
+  border: 2px dashed rgba(139, 92, 246, 0.4);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.dropzone-container:hover {
+  background: rgba(243, 232, 255, 0.5); /* f3e8ff */
+  border-color: rgba(139, 92, 246, 0.8);
+  box-shadow: 0 10px 15px -3px rgba(139, 92, 246, 0.1);
+  transform: translateY(-2px);
+}
+
+.dropzone-container.dragging {
+  background: rgba(237, 233, 254, 0.8); /* ede9fe */
+  border-color: #8b5cf6;
+  border-width: 3px;
+  transform: scale(1.02);
+  box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.2);
+}
+
+.dropzone-container.processing {
+  opacity: 0.6;
+  pointer-events: none;
+  filter: grayscale(20%);
+}
+
+.hidden-input {
+  display: none;
+}
+
+.icon-wrapper {
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+  background: rgba(237, 233, 254, 1);
+  padding: 1.5rem;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px -1px rgba(139, 92, 246, 0.2);
+}
+
+.drop-icon {
+  transition: all 0.3s ease;
+}
+
+.drop-icon.active {
+  transform: scale(1.1);
+}
+
+.pulse {
+  animation: float 3s ease-in-out infinite;
+}
+
+.drop-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--text-main);
+  letter-spacing: -0.01em;
+}
+
+.drop-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.select-btn {
+  margin-top: 1rem;
+  pointer-events: none; /* Let parent div handle click */
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
